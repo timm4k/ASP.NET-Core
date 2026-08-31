@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#10091f">
+    <title>Middleware Observatory</title>
+    <link rel="stylesheet" href="/css/site.css">
+    <script src="/js/site.js" defer></script>
+</head>
+<body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="hero shell">
+        <div>
+            <p class="eyebrow">ASP.NET CORE · MIDDLEWARE ONLY</p>
+            <h1>Middleware <span>Observatory</span></h1>
+            <p class="hero-copy">A compact HTTP dashboard powered by custom middleware endpoints without MapGet</p>
+        </div>
+        <div class="status-pill"><i></i> Server online</div>
+    </header>
+
+    <main class="shell">
+        <section class="metrics-grid">
+            <article class="panel metric-panel">
+                <div class="panel-heading">
+                    <div>
+                        <p class="section-index">01 · COUNTER</p>
+                        <h2>Endpoint views</h2>
+                    </div>
+                    <span class="endpoint">GET /counter</span>
+                </div>
+                <strong id="counterValue" class="metric-value">—</strong>
+                <p class="muted">Every request increments a thread-safe server counter</p>
+                <button id="counterButton" type="button">Count this view</button>
+            </article>
+
+            <article class="panel metric-panel">
+                <div class="panel-heading">
+                    <div>
+                        <p class="section-index">02 · SERVER CLOCK</p>
+                        <h2>Date and time</h2>
+                    </div>
+                    <span class="endpoint">GET /date · /time</span>
+                </div>
+                <div class="clock-row">
+                    <div><span>Date</span><strong id="dateValue">—</strong></div>
+                    <div><span>Time</span><strong id="timeValue">—</strong></div>
+                </div>
+                <button id="clockButton" class="secondary" type="button">Refresh server clock</button>
+            </article>
+        </section>
+
+        <section class="panel gallery-panel">
+            <div class="panel-heading">
+                <div>
+                    <p class="section-index">03 · HTML COLLECTION</p>
+                    <h2>Ten objects from the server</h2>
+                </div>
+                <span class="endpoint">GET /objects</span>
+            </div>
+            <div id="objectGallery" class="object-grid" aria-live="polite"></div>
+        </section>
+
+        <section class="workspace-grid">
+            <article class="panel headers-panel">
+                <div class="panel-heading">
+                    <div>
+                        <p class="section-index">04 · REQUEST INSPECTOR</p>
+                        <h2>Incoming headers</h2>
+                    </div>
+                    <span class="endpoint">GET /headers</span>
+                </div>
+                <p class="muted">The endpoint returns every header received by the server</p>
+                <button id="headersButton" type="button">Inspect request</button>
+                <div id="headersResult" class="headers-result empty-state">Run the request to see its headers</div>
+            </article>
+
+            <article class="panel profile-panel">
+                <div class="panel-heading">
+                    <div>
+                        <p class="section-index">05 · QUERY PROFILE</p>
+                        <h2>Build an imaginary profile</h2>
+                    </div>
+                    <span class="endpoint">GET /profile?... </span>
+                </div>
+                <form id="profileForm">
+                    <div class="form-grid">
+                        <label>Name<input name="name" placeholder="Enter name" maxlength="80" required></label>
+                        <label>Surname<input name="surname" placeholder="Enter surname" maxlength="80" required></label>
+                        <label>Age<input name="age" type="number" placeholder="Enter age" min="1" max="120" required></label>
+                        <label>City<input name="city" placeholder="Enter city" maxlength="80" required></label>
+                        <label>Occupation<input name="occupation" placeholder="Enter occupation" maxlength="80" required></label>
+                        <label>Hobby<input name="hobby" placeholder="Enter hobby" maxlength="80" required></label>
+                        <label class="wide-field">Favorite color<input name="favoriteColor" placeholder="Enter favorite color" maxlength="80" required></label>
+                    </div>
+                    <button type="submit">Generate profile</button>
+                </form>
+                <div id="profileResult" class="profile-result empty-state">Complete the form to create a profile from QueryString</div>
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>
