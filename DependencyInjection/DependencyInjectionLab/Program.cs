@@ -1,0 +1,3 @@
+using DependencyInjectionLab;
+
+DependencyInjectionDemonstration.Run();

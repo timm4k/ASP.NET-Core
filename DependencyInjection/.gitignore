@@ -1,0 +1,11 @@
+.vs/
+**/bin/
+**/obj/
+
+*.user
+*.suo
+*.rsuser
+*.sln.docstates
+
+logs.txt
+*.log
