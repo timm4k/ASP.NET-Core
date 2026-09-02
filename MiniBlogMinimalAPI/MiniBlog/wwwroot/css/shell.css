@@ -1,0 +1,126 @@
+.site-header,
+.app-shell,
+.about-page {
+    width: min(1320px, calc(100% - 48px));
+    margin-inline: auto;
+}
+
+.site-header {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    border-bottom: 1px solid var(--line);
+}
+
+.brand {
+    display: grid;
+    gap: 2px;
+    text-transform: uppercase;
+}
+
+.brand strong {
+    position: relative;
+    width: max-content;
+    font-family: var(--display);
+    font-size: 1.65rem;
+    line-height: 1;
+    letter-spacing: 0.025em;
+}
+
+.brand strong::after {
+    position: absolute;
+    right: -12px;
+    bottom: -2px;
+    width: 34px;
+    height: 5px;
+    content: "";
+    background: var(--acid);
+    transform: rotate(-5deg);
+}
+
+.brand span {
+    color: var(--gray);
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.site-nav a,
+.menu-button {
+    padding: 10px 12px;
+    color: var(--paper);
+    background: transparent;
+    border: 1px solid transparent;
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+    color: var(--black);
+    background: var(--yellow);
+    border-color: var(--yellow);
+    transform: rotate(-1deg);
+}
+
+.menu-button {
+    display: none;
+    border-color: var(--line);
+}
+
+.ticker {
+    width: 100%;
+    overflow: hidden;
+    color: var(--black);
+    background: var(--yellow);
+    border-block: 2px solid var(--black);
+    transform: rotate(-0.35deg);
+}
+
+.ticker-track {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    padding: 9px 0;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    animation: ticker var(--ticker-duration, 24s) linear infinite;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+}
+
+.ticker-group {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    gap: 28px;
+    padding-right: 28px;
+}
+
+.ticker-track i {
+    color: var(--red);
+    font-style: normal;
+}
+
+@keyframes ticker {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.app-shell {
+    min-height: calc(100vh - 190px);
+    padding-block: 54px 94px;
+}
+

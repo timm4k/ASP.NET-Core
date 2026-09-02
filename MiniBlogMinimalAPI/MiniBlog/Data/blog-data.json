@@ -1,0 +1,301 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Meet the Virtual Band: 2-D, Murdoc, Noodle and Russel",
+      "slug": "meet-the-virtual-band-2-d-murdoc-noodle-and-russel",
+      "summary": "A practical guide to the four fictional musicians who give Gorillaz its face, personalities and continuing story",
+      "content": "Gorillaz presents itself through four animated members created by artist Jamie Hewlett. Stuart Pot, better known as 2-D, is the blue-haired lead singer and keyboard player. His soft voice is performed primarily by Damon Albarn, while actors have voiced the character in interviews and animated material.\n\nMurdoc Niccals is the green-skinned bassist and the band's self-appointed founder. He is written as arrogant, chaotic and frequently responsible for the fictional group's worst decisions. Noodle is the Japanese guitarist and occasional vocalist. Introduced as a child prodigy, she grows older across the band's different visual phases instead of remaining frozen in one design.\n\nRussel Hobbs is the American drummer. His fictional history connects the group to hip-hop culture and supernatural stories; in the debut era, the ghost of Del the Funky Homosapien appears through Russel during performances such as Clint Eastwood. Together, the four characters let Gorillaz treat every album as another chapter in an illustrated world rather than a conventional band campaign",
+      "imageUrl": "/images/gorillaz-characters.jpg",
+      "categoryIds": [
+        2,
+        4
+      ],
+      "createdAt": "2026-08-23T13:30:00+03:00",
+      "updatedAt": "2026-08-23T13:30:00+03:00",
+      "externalUrl": "https://www.youtube.com/@Gorillaz",
+      "externalLabel": "Visit official Gorillaz channel",
+      "author": "Archive Editor",
+      "authorKeyHash": "",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "title": "Damon Albarn and Jamie Hewlett: The Humans Behind Gorillaz",
+      "slug": "damon-albarn-and-jamie-hewlett-the-humans-behind-gorillaz",
+      "summary": "How a musician and a comic artist built a project where sound, character design and storytelling share equal weight",
+      "content": "Gorillaz was formed in 1998 by musician Damon Albarn and artist Jamie Hewlett. Albarn was already known as the singer and principal songwriter of Blur. Within Gorillaz he became the musical constant: writing, recording, singing as 2-D and inviting a changing international cast of performers into each project.\n\nHewlett first became prominent through the comic Tank Girl, created with writer Alan Martin. For Gorillaz he designed 2-D, Murdoc, Noodle and Russel, then helped build their fictional history across album artwork, music videos, websites, interviews and live visuals. His drawings are not decoration added after the music; they are one half of the group's identity.\n\nThe flexible structure explains why Gorillaz can move between alternative rock, hip-hop, dub, electronic music and pop without needing one fixed lineup. Albarn supplies a musical center, Hewlett maintains the visual world, and producers, animators, actors and guest musicians expand it. Producer and percussionist Remi Kabaka Jr., also associated with the voice of Russel, later became another important creative partner in the project",
+      "imageUrl": "/images/albarn-hewlett.jpg",
+      "categoryIds": [
+        3,
+        4,
+        5
+      ],
+      "createdAt": "2026-08-21T18:15:00+03:00",
+      "updatedAt": "2026-08-21T18:15:00+03:00",
+      "externalUrl": "https://www.gorillaz.com/",
+      "externalLabel": "Visit official Gorillaz site",
+      "author": "Archive Editor",
+      "authorKeyHash": "",
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "title": "Gorillaz (2001): The Debut That Introduced Kong Studios",
+      "slug": "gorillaz-2001-the-debut-that-introduced-kong-studios",
+      "summary": "The self-titled debut established the band's hybrid sound and made its animated lineup recognizable around the world",
+      "content": "The self-titled Gorillaz album arrived in 2001 after the Tomorrow Comes Today EP introduced the project. Damon Albarn worked with producer Dan the Automator, while Jamie Hewlett's videos and artwork presented the four fictional musicians from their base at Kong Studios.\n\nThe record deliberately refuses one genre. Re-Hash and 5/4 lean toward alternative rock, Tomorrow Comes Today brings dub and trip-hop atmosphere, and Clint Eastwood combines Albarn's understated chorus with a rap performance by Del the Funky Homosapien. 19-2000 later became another defining single.\n\nThe green military-style vehicle on the cover became one of the first instantly recognizable Gorillaz images. More importantly, the album proved that audiences would follow both sides of the concept: the real recordings and the fictional group appearing in videos, interviews and interactive web material",
+      "imageUrl": "/images/gorillaz-debut.jpg",
+      "categoryIds": [
+        1,
+        2,
+        5
+      ],
+      "createdAt": "2026-08-18T12:20:00+03:00",
+      "updatedAt": "2026-08-18T12:20:00+03:00",
+      "externalUrl": "https://www.youtube.com/watch?v=1V_xRb0x9aw",
+      "externalLabel": "Watch Clint Eastwood",
+      "author": "Archive Editor",
+      "authorKeyHash": "",
+      "isActive": true
+    },
+    {
+      "id": 4,
+      "title": "Demon Days (2005): A Darker and More Cinematic World",
+      "slug": "demon-days-2005-a-darker-and-more-cinematic-world",
+      "summary": "Gorillaz expanded from a successful experiment into a complete album experience shaped by danger, isolation and hope",
+      "content": "Released in 2005, Demon Days was produced by Damon Albarn and Danger Mouse. It keeps the genre-crossing freedom of the debut but gives the track sequence a stronger dramatic arc. The opening establishes a damaged, anxious world; the final pair, Don't Get Lost in Heaven and Demon Days, closes with a choir and a cautious sense of release.\n\nFeel Good Inc. pairs De La Soul's laughter and rap with one of the band's best-known bass lines. DARE places Shaun Ryder beside Noodle, Dirty Harry uses the San Fernandez Youth Chorus, and Every Planet We Reach Is Dead features guitar by Ike Turner. Those collaborations feel like characters entering the same story rather than unrelated guest appearances.\n\nJamie Hewlett's cover arranges Murdoc, 2-D, Noodle and Russel in a four-panel portrait. The image clearly identifies the virtual lineup and became inseparable from the album's visual identity",
+      "imageUrl": "/images/demon-days.jpg",
+      "categoryIds": [
+        1,
+        4,
+        5
+      ],
+      "createdAt": "2026-08-15T17:45:00+03:00",
+      "updatedAt": "2026-08-15T17:45:00+03:00",
+      "externalUrl": "https://www.youtube.com/watch?v=HyHNuVaZJ-k",
+      "externalLabel": "Watch Feel Good Inc.",
+      "author": "Archive Editor",
+      "authorKeyHash": "",
+      "isActive": true
+    },
+    {
+      "id": 5,
+      "title": "Plastic Beach (2010): Pop Music Built from Beautiful Waste",
+      "slug": "plastic-beach-2010-pop-music-built-from-beautiful-waste",
+      "summary": "The third studio album placed the band on a manufactured island and connected environmental anxiety with bright pop spectacle",
+      "content": "Plastic Beach was released in 2010 and built around an island assembled from discarded material in the ocean. The environmental idea is present without turning the album into a lecture: polished surfaces, synthetic sounds and celebrity voices create something attractive from a world shaped by consumption and waste.\n\nThe guest list includes Snoop Dogg, Bobby Womack, Mos Def, Lou Reed, Mark E. Smith, De La Soul, Little Dragon and members of The Clash. Stylo brings together Albarn, Mos Def and Womack, while Empire Ants moves from a quiet first half into a luminous electronic section led by Yukimi Nagano.\n\nFor the fictional story, Murdoc relocates to Plastic Beach and assembles a new version of the group, including Cyborg Noodle. The photographed island model on the cover appeared under different lighting conditions across editions, making the location itself the central character of the campaign",
+      "imageUrl": "/images/plastic-beach.jpg",
+      "categoryIds": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "createdAt": "2026-08-11T21:10:00+03:00",
+      "updatedAt": "2026-08-11T21:10:00+03:00",
+      "externalUrl": "https://www.youtube.com/watch?v=nhPaWIeULKk",
+      "externalLabel": "Watch Stylo",
+      "author": "Archive Editor",
+      "authorKeyHash": "",
+      "isActive": true
+    },
+    {
+      "id": 6,
+      "title": "Song Machine (2020): Gorillaz as an Open-Door Studio",
+      "slug": "song-machine-2020-gorillaz-as-an-open-door-studio",
+      "summary": "An episodic release model let each song introduce a new collaborator, sound and animated setting before forming an album",
+      "content": "Song Machine began as a series of individual episodes instead of a traditional album announcement. New songs and videos arrived throughout 2020, with the fictional band working from Kong Studios and welcoming a different collaborator into almost every session. The collected first season was released as Song Machine, Season One: Strange Timez in October 2020.\n\nThe project moves quickly between Robert Smith on Strange Timez, slowthai and Slaves on Momentary Bliss, Fatoumata Diawara on Désolé, ScHoolboy Q on PAC-MAN and Elton John with 6LACK on The Pink Phantom. This variety reflects the basic Gorillaz model: a stable illustrated world surrounding a deliberately unstable musical lineup.\n\nJamie Hewlett's videos connect the episodes visually, while the release schedule makes the collaboration process part of the story. Song Machine demonstrated that the project works naturally as a continuing multimedia series, not only as a band that appears every few years with a completed album",
+      "imageUrl": "/images/song-machine.jpg",
+      "categoryIds": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "createdAt": "2026-08-06T23:30:00+03:00",
+      "updatedAt": "2026-08-06T23:30:00+03:00",
+      "externalUrl": "https://www.youtube.com/watch?v=bbA5p54Rw2M",
+      "externalLabel": "Watch Strange Timez",
+      "author": "Archive Editor",
+      "authorKeyHash": "",
+      "isActive": true
+    },
+    {
+      "id": 7,
+      "title": "Humanz (2017): A Party at the End of the World",
+      "slug": "humanz-2017-a-party-at-the-end-of-the-world",
+      "summary": "After seven years away, Gorillaz returned with a guest-heavy album imagined as a party during a world-changing night",
+      "content": "Humanz was released on 28 April 2017, ending the longest gap between Gorillaz studio albums at that point. Damon Albarn, Remi Kabaka Jr. and The Twilite Tone shaped a record built around many voices rather than a traditional fixed band performance.\n\nThe album imagines an emotionally charged party while the outside world changes beyond recognition. Vince Staples opens Ascension, Popcaan leads Saturnz Barz, Grace Jones appears on Charger, Kelela and Danny Brown share Submission, and Mavis Staples joins Pusha T on Let Me Out. The deluxe edition expands that crowded structure even further.\n\nJamie Hewlett redesigned the four characters with more detailed contemporary portraits. The cover echoes the four-panel arrangement associated with Demon Days, but presents older versions of 2-D, Murdoc, Noodle and Russel in a digital photographic style",
+      "imageUrl": "/images/humanz.jpg",
+      "externalUrl": "https://www.youtube.com/watch?v=5qJp6xlKEug",
+      "externalLabel": "Watch Saturnz Barz",
+      "categoryIds": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "createdAt": "2026-08-09T15:40:00+03:00",
+      "updatedAt": "2026-08-09T15:40:00+03:00",
+      "author": "Archive Editor",
+      "authorKeyHash": "",
+      "isActive": true
+    },
+    {
+      "id": 8,
+      "title": "The Now Now (2018): A Lonely Record in Bright Sunlight",
+      "slug": "the-now-now-2018-a-lonely-record-in-bright-sunlight",
+      "summary": "A more focused Gorillaz album puts 2-D and Damon Albarn near the center while the fictional band changes around them",
+      "content": "The Now Now arrived on 29 June 2018, only fourteen months after Humanz. It was recorded quickly at Studio 13 and produced by Gorillaz with James Ford and Remi Kabaka. Compared with the crowded guest list of Humanz, this album is intentionally narrower and more reflective.\n\nGeorge Benson plays guitar on Humility, Snoop Dogg and Jamie Principle appear on Hollywood, and most of the remaining tracks keep Damon Albarn's voice at the center. Songs such as Tranz, Kansas and Souk Eye frame loneliness through warm synthesizers and relaxed grooves.\n\nIn the fictional story Murdoc is absent and imprisoned, while Ace from The Powerpuff Girls temporarily plays bass. The Humility video places 2-D, Noodle, Russel and Ace at Venice Beach and mixes animation with a live appearance by Jack Black",
+      "imageUrl": "/images/the-now-now.jpg",
+      "externalUrl": "https://www.youtube.com/watch?v=E5yFcdPAGv0",
+      "externalLabel": "Watch Humility",
+      "categoryIds": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "createdAt": "2026-08-08T14:20:00+03:00",
+      "updatedAt": "2026-08-08T14:20:00+03:00",
+      "author": "Archive Editor",
+      "authorKeyHash": "",
+      "isActive": true
+    },
+    {
+      "id": 9,
+      "title": "Cracker Island (2023): Pop, Cults and California Neon",
+      "slug": "cracker-island-2023-pop-cults-and-california-neon",
+      "summary": "The eighth studio album moves the fictional band to Los Angeles and turns its story into a satire about belonging and manufactured belief",
+      "content": "Cracker Island was released on 24 February 2023. Gorillaz, Remi Kabaka Jr. and Greg Kurstin produced the album, which presents a concise synth-pop sound while continuing the project's habit of using unexpected guests.\n\nThundercat brings bass and vocals to the title track. The record also includes Stevie Nicks on Oil, Tame Impala and Bootie Brown on New Gold, Bad Bunny on Tormenta, Beck on Possession Island and Adeleye Omotayo on Silent Running. The collaborations move between funk, psychedelic pop, reggaeton and quieter piano-led material.\n\nJamie Hewlett's visual campaign relocates the characters to Silver Lake, Los Angeles. Murdoc creates a fictional cult called The Last Cult, giving the album a story about online communities, devotion and the search for meaning under bright California imagery",
+      "imageUrl": "/images/cracker-island.jpg",
+      "externalUrl": "https://www.youtube.com/watch?v=S03T47hapAc",
+      "externalLabel": "Watch Cracker Island",
+      "categoryIds": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "createdAt": "2026-08-07T13:10:00+03:00",
+      "updatedAt": "2026-08-07T13:10:00+03:00",
+      "author": "Archive Editor",
+      "authorKeyHash": "",
+      "isActive": true
+    },
+    {
+      "id": 10,
+      "title": "The Live Band: Seye Adelekan and Jeff Wootton",
+      "slug": "the-live-band-seye-adelekan-and-jeff-wootton",
+      "summary": "The musicians who turn Gorillaz studio collaborations into a physical live band beside Damon Albarn",
+      "content": "Damon Albarn remains the musical center of Gorillaz on stage, singing, playing keyboards and directing a lineup that grows or changes with each tour. Jamie Hewlett does not perform as a member of the touring band; his animation and visual direction appear on the screens, sets and artwork surrounding the musicians.\n\nSeye Adelekan is a Nigerian-British multi-instrumentalist, songwriter and producer who joined the Gorillaz live band in 2017. He performs primarily on bass and also contributes acoustic guitar and backing vocals. His job is more than copying a studio bass line: Gorillaz songs combine electronic production, samples and many guest performers, so the live arrangement has to translate those layers into a direct concert sound.\n\nJeff Wootton is an English guitarist and songwriter from Manchester who has performed as the Gorillaz live lead guitarist since 2010. He joined for the Escape to Plastic Beach era and became a recurring part of later tours. Together with additional drummers, percussionists, keyboard players, backing singers and visiting collaborators, Adelekan and Wootton help turn the virtual band's changing catalogue into a visible live performance",
+      "imageUrl": "/images/gorillaz-live-2022.jpg",
+      "externalUrl": "https://www.marshall.com/tr/en/backstage/articles/the-sound-of-seye-adelekan",
+      "externalLabel": "Read Seye interview",
+      "categoryIds": [
+        3,
+        5,
+        6
+      ],
+      "createdAt": "2026-09-01T12:00:00Z",
+      "updatedAt": "2026-09-01T12:00:00Z",
+      "author": "Archive Editor",
+      "authorKeyHash": "",
+      "isActive": true
+    },
+    {
+      "id": 11,
+      "title": "The Fall (2010): A Tour Recorded on an iPad",
+      "slug": "the-fall-2010-a-tour-recorded-on-an-ipad",
+      "summary": "A compact travel diary made by Damon Albarn across the North American Plastic Beach tour",
+      "content": "Damon Albarn recorded The Fall over 32 days during the North American leg of the Escape to Plastic Beach Tour in October and November 2010. Most of the music was made on an iPad, with a small selection of additional instruments, then mixed in England by Stephen Sedgwick.\n\nThe track titles follow locations and impressions from the road: Phoner to Arizona, The Joplin Spider, The Parish of Space Dust and The Seattle Yodel turn the tour route into a loose electronic diary. The result is quieter and more provisional than Plastic Beach, favoring sketches, synthesizer textures and passing observations over a large cast of guests.\n\nThe album first appeared on 25 December 2010 as a stream on the Gorillaz website and a download for members of the Sub-Division fan club. A wider physical release followed in 2011, preserving a project that was designed around speed, portability and the experience of travel",
+      "imageUrl": "/images/the-fall.jpg",
+      "externalUrl": "https://www.youtube.com/@Gorillaz",
+      "externalLabel": "Open official channel",
+      "categoryIds": [
+        1,
+        2,
+        4
+      ],
+      "createdAt": "2026-09-01T12:00:00Z",
+      "updatedAt": "2026-09-01T12:00:00Z",
+      "author": "Archive Editor",
+      "authorKeyHash": "",
+      "isActive": true
+    },
+    {
+      "id": 12,
+      "title": "D-Sides (2007): The Demon Days Archive",
+      "slug": "d-sides-2007-the-demon-days-archive",
+      "summary": "B-sides, remixes and unreleased recordings reveal the material surrounding Demon Days",
+      "content": "D-Sides is a 2007 double-disc compilation built from the wider Demon Days period. It collects B-sides, bonus tracks, remixes and previously unreleased recordings instead of presenting itself as the next Gorillaz studio album.\n\nThe first disc includes songs such as 68 State, Hong Kong, Rockit and Stop the Dams. The second concentrates on alternate versions and remixes, showing how the same source material could move between alternative rock, dub, hip-hop and electronic production.\n\nThe collection matters because Gorillaz releases have always extended beyond the numbered studio albums. Videos, websites, bonus tracks and visual experiments form part of each phase, while D-Sides gathers music that would otherwise remain scattered across singles and special editions",
+      "imageUrl": "/images/d-sides.jpg",
+      "externalUrl": "https://www.rhino.com/aod/d-sides-special-edition-gorillaz",
+      "externalLabel": "Explore D-Sides",
+      "categoryIds": [
+        1,
+        4,
+        5
+      ],
+      "createdAt": "2026-09-01T12:00:00Z",
+      "updatedAt": "2026-09-01T12:00:00Z",
+      "author": "Archive Editor",
+      "authorKeyHash": "",
+      "isActive": true
+    },
+    {
+      "id": 13,
+      "title": "The Mountain (2026): Memory, Loss and a Global Guest List",
+      "slug": "the-mountain-2026-memory-loss-and-a-global-guest-list",
+      "summary": "The ninth Gorillaz studio album expands the project through fifteen tracks and an international cast",
+      "content": "The Mountain was released on 27 February 2026 as the ninth Gorillaz studio album. Its fifteen tracks continue the project's open-collaboration model while framing the record around memory, loss, passage and renewal.\n\nThe guest list reaches across generations and musical traditions. Anoushka Shankar, Sparks, Tony Allen, Bizarrap, Kara Jackson, IDLES, Black Thought, Johnny Marr, Trueno, Omar Souleyman, Yasiin Bey, Asha Bhosle and others appear across the album. Some tracks also incorporate contributions connected to artists who died before the release, giving the record an unusual conversation between present performances and musical memory.\n\nJamie Hewlett's artwork again places Murdoc, Noodle, Russel and 2-D at the center of the visual identity. The hand-drawn campaign makes The Mountain a continuation of the fictional band's story while the recordings remain the work of Damon Albarn and a wide international network of musicians",
+      "imageUrl": "/images/the-mountain.jpg",
+      "externalUrl": "https://www.youtube.com/watch?v=4xN5NDAAOkY",
+      "externalLabel": "Listen to The Mountain",
+      "categoryIds": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "createdAt": "2026-09-01T12:00:00Z",
+      "updatedAt": "2026-09-01T12:00:00Z",
+      "author": "Archive Editor",
+      "authorKeyHash": "",
+      "isActive": true
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Albums",
+      "slug": "albums"
+    },
+    {
+      "id": 2,
+      "name": "Virtual Band",
+      "slug": "virtual-band"
+    },
+    {
+      "id": 3,
+      "name": "Creators",
+      "slug": "creators"
+    },
+    {
+      "id": 4,
+      "name": "Visual Art",
+      "slug": "visual-art"
+    },
+    {
+      "id": 5,
+      "name": "Collaborations",
+      "slug": "collaborations"
+    },
+    {
+      "id": 6,
+      "name": "Live Band",
+      "slug": "live-band"
+    }
+  ]
+}

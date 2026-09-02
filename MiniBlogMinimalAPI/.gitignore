@@ -1,0 +1,13 @@
+.verification/
+.vs/
+**/bin/
+**/obj/
+**/uploads/
+
+*.user
+*.suo
+*.rsuser
+*.sln.docstates
+
+*.log
+*.tmp

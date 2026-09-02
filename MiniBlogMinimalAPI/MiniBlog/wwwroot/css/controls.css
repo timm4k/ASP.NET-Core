@@ -1,0 +1,111 @@
+.stamp {
+    display: inline-block;
+    color: var(--black);
+    background: var(--acid);
+    border: 2px solid var(--black);
+    font-size: 0.62rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transform: rotate(-4deg);
+}
+
+.button {
+    display: inline-flex;
+    min-height: 45px;
+    padding: 0 18px;
+    align-items: center;
+    justify-content: center;
+    color: var(--paper);
+    background: transparent;
+    border: 1px solid var(--line);
+    font-size: 0.67rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: transform 120ms ease, background 120ms ease, color 120ms ease;
+}
+
+.button:hover {
+    transform: translate(-2px, -2px) rotate(-1deg);
+}
+
+.button-acid,
+.button.primary {
+    color: var(--black);
+    background: var(--acid);
+    border-color: var(--acid);
+    box-shadow: 4px 4px 0 var(--gray);
+}
+
+.button-paper {
+    color: var(--black);
+    background: var(--paper);
+    border-color: var(--paper);
+}
+
+.button.danger {
+    color: var(--paper);
+    background: var(--red);
+    border-color: var(--red);
+}
+
+.archive-tools {
+    display: grid;
+    grid-template-columns: minmax(260px, 1fr) auto;
+    gap: 20px;
+    align-items: center;
+    margin: 56px 0 68px;
+    padding: 18px;
+    background: var(--black-soft);
+    border: 1px solid var(--line);
+}
+
+.search-form {
+    display: flex;
+    border-bottom: 2px solid var(--paper);
+}
+
+.search-form input {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 12px;
+    color: var(--paper);
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.search-form button {
+    color: var(--black);
+    background: var(--yellow);
+    border: 0;
+    padding-inline: 18px;
+    font-size: 0.66rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.category-strip {
+    display: flex;
+    max-width: 100%;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 3px;
+}
+
+.category-chip {
+    flex: 0 0 auto;
+    padding: 9px 11px;
+    color: var(--gray);
+    background: transparent;
+    border: 1px solid var(--line);
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.category-chip:hover,
+.category-chip.active {
+    color: var(--black);
+    background: var(--paper);
+}
+

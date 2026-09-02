@@ -1,0 +1,182 @@
+.editor-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+    gap: 26px;
+    align-items: start;
+}
+
+.form-card,
+.side-card {
+    padding: clamp(24px, 4vw, 42px);
+    background: var(--black-soft);
+    border: 1px solid var(--line);
+}
+
+.side-card {
+    position: sticky;
+    top: 18px;
+    padding: 22px;
+    color: var(--black);
+    background: var(--yellow);
+    transform: rotate(1deg);
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.side-card .kicker {
+    color: var(--red);
+}
+
+.side-card .card-link {
+    font-size: 0.58rem;
+}
+
+.field {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+.field label,
+.field legend {
+    color: var(--gray);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.field input,
+.field textarea,
+.field select {
+    width: 100%;
+    padding: 13px 14px;
+    color: var(--paper);
+    background: #0c0c0c;
+    border: 1px solid var(--line);
+    outline: 0;
+}
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus {
+    border-color: var(--acid);
+    box-shadow: 3px 3px 0 rgba(166, 255, 0, 0.25);
+}
+
+.field textarea {
+    min-height: 130px;
+    resize: vertical;
+    line-height: 1.55;
+}
+
+.file-picker {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.file-picker input {
+    display: none;
+}
+.file-picker-name {
+    color: var(--gray);
+    font-size: 0.8rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.image-preview {
+    width: 100%;
+    max-height: 320px;
+    margin-top: 10px;
+    object-fit: contain;
+    background: #0c0c0c;
+    border: 1px solid var(--line);
+}
+
+.field-hint {
+    color: var(--gray);
+    font-size: 0.55rem;
+    line-height: 1.5;
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+    padding: 0;
+    border: 0;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px;
+    background: #0c0c0c;
+    border: 1px solid var(--line);
+}
+
+.checkbox-item input {
+    width: auto;
+    accent-color: var(--acid);
+}
+
+.status-box {
+    display: none;
+    margin-bottom: 18px;
+    padding: 14px;
+    color: var(--black);
+    background: var(--red);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.status-box.visible {
+    display: block;
+}
+
+.status-box.success {
+    background: var(--acid);
+}
+
+.visibility-state {
+    display: inline-block;
+    margin-top: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.visibility-state.active {
+    color: var(--acid);
+}
+
+.visibility-state.inactive {
+    color: var(--red);
+}
+.management-list {
+    display: grid;
+    gap: 10px;
+}
+
+.management-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 18px;
+    align-items: center;
+    padding: 18px;
+    background: var(--black-soft);
+    border: 1px solid var(--line);
+}
+
+.management-row strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.management-row small {
+    color: var(--gray);
+}
+

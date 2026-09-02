@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kong Signal, an independent archive about Gorillaz albums, characters and creators">
+    <title>Gorillaz Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/shell.css">
+    <link rel="stylesheet" href="/css/hero.css">
+    <link rel="stylesheet" href="/css/controls.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/post.css">
+    <link rel="stylesheet" href="/css/forms.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script type="module" src="/js/app.js"></script>
+</head>
+<body>
+    <div class="page-noise"></div>
+    <header class="site-header">
+        <a class="brand" href="/">
+            <strong>Kong Signal</strong>
+            <span>Independent Gorillaz archive</span>
+        </a>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+            <a href="/">Archive</a>
+            <a href="/posts/add">New post</a>
+            <a href="/my-posts">My posts</a>
+            <a href="/categories/add">Categories</a>
+            <a href="/about">About</a>
+        </nav>
+    </header>
+
+    <div class="ticker" aria-label="Site transmission">
+        <div class="ticker-track">
+            <div class="ticker-group">
+                <span>NEW TRANSMISSION</span><i>★</i><span>SIGNAL UNSTABLE</span><i>★</i><span>ALBUMS / CHARACTERS / CREATORS</span><i>★</i><span>ENTER AT YOUR OWN RISK</span><i>★</i>
+            </div>
+        </div>
+    </div>
+
+    <main id="app" class="app-shell" aria-live="polite">
+        <section class="loading-panel">
+            <span class="status-light"></span>
+            <p>Connecting to Kong Studios archive</p>
+        </section>
+    </main>
+</body>
+</html>
