@@ -1,0 +1,318 @@
+.menu-search {
+    display: grid;
+    width: min(100%, 380px);
+    gap: 0.45rem;
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.menu-search input {
+    width: 100%;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--paper);
+    padding: 0.9rem 1.2rem;
+    color: var(--ink);
+}
+
+.category-filters {
+    display: flex;
+    gap: 0.6rem;
+    overflow-x: auto;
+    margin-bottom: 1.6rem;
+    padding: 0.2rem 0.1rem 0.6rem;
+    scrollbar-width: thin;
+}
+
+.category-filters button {
+    flex: none;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: transparent;
+    padding: 0.62rem 1rem;
+    cursor: pointer;
+    font-size: 0.86rem;
+    font-weight: 700;
+}
+
+.category-filters button.active,
+.category-filters button:hover {
+    border-color: var(--coffee);
+    background: var(--coffee);
+    color: white;
+}
+
+.drink-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.drink-grid > .menu-message {
+    grid-column: 1 / -1;
+}
+
+.drink-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid transparent;
+    border-radius: 22px;
+    background: var(--paper);
+    padding: 0;
+    cursor: pointer;
+    text-align: left;
+    box-shadow: 0 8px 24px rgba(65, 39, 28, 0.05);
+    transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.drink-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.drink-card.selected {
+    border-color: var(--clay);
+    box-shadow: 0 0 0 3px rgba(189, 105, 73, 0.14), var(--shadow);
+}
+
+.drink-photo {
+    display: block;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    background: #d9c7b8;
+}
+
+.drink-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 500ms ease;
+}
+
+.drink-card:hover .drink-photo img {
+    transform: scale(1.035);
+}
+
+.drink-photo.image-failed {
+    background: linear-gradient(135deg, #dcc7b3, #9e6a50);
+}
+
+.drink-copy {
+    display: grid;
+    min-height: 174px;
+    align-content: start;
+    padding: 1.15rem 3rem 1.25rem 1.2rem;
+}
+
+.drink-copy small {
+    margin-bottom: 0.35rem;
+    color: var(--clay);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.drink-copy strong {
+    color: var(--coffee-dark);
+    font-family: var(--serif);
+    font-size: 1.55rem;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.drink-copy > span {
+    margin-top: 0.65rem;
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.45;
+}
+
+.drink-card > i {
+    position: absolute;
+    right: 1rem;
+    bottom: 1.15rem;
+    display: grid;
+    width: 30px;
+    height: 30px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--cream);
+    color: var(--coffee);
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.drink-card.selected > i {
+    background: var(--clay);
+    color: white;
+}
+
+.order-dock {
+    position: fixed;
+    z-index: 20;
+    left: 50%;
+    bottom: 22px;
+    display: flex;
+    width: min(680px, calc(100% - 32px));
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 24px;
+    background: rgba(45, 27, 21, 0.94);
+    color: white;
+    box-shadow: 0 22px 65px rgba(42, 29, 24, 0.3);
+    backdrop-filter: blur(16px);
+    transform: translateX(-50%);
+}
+
+.order-selection {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: 0.85rem;
+}
+
+.order-selection img {
+    width: 54px;
+    height: 54px;
+    flex: none;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.order-selection div {
+    display: grid;
+    min-width: 0;
+}
+
+.order-selection small {
+    color: #cdbdb1;
+}
+
+.order-selection strong {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.clear-selection {
+    border: 0;
+    background: transparent;
+    padding: 0.35rem 0.2rem;
+    color: #d7c8bd;
+    cursor: pointer;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.clear-selection:hover {
+    color: white;
+}
+
+.order-dock .primary-button {
+    flex: none;
+    background: var(--clay);
+}
+
+.toast {
+    position: fixed;
+    z-index: 30;
+    top: 108px;
+    right: 24px;
+    display: flex;
+    width: min(390px, calc(100% - 48px));
+    align-items: start;
+    justify-content: space-between;
+    gap: 1rem;
+    border-radius: 18px;
+    background: var(--sage);
+    padding: 1rem 1.1rem;
+    color: white;
+    box-shadow: var(--shadow);
+    opacity: 0;
+    transform: translateY(-12px);
+    transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.toast.visible {
+    opacity: 1;
+    transform: none;
+}
+
+.toast.error {
+    background: var(--clay);
+}
+
+.toast > div {
+    display: grid;
+    gap: 0.15rem;
+}
+
+.toast span {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.88rem;
+}
+
+.toast button {
+    border: 0;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.recent-section {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+    gap: 3rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--line);
+}
+
+.recent-orders {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.8rem;
+}
+
+.recent-orders .empty-state {
+    grid-column: 1 / -1;
+}
+
+.recent-order {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 18px;
+    background: var(--paper);
+    padding: 0.75rem;
+}
+
+.recent-order img {
+    width: 68px;
+    height: 68px;
+    flex: none;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
+.recent-order div {
+    display: grid;
+}
+
+.recent-order small,
+.recent-order span {
+    color: var(--muted);
+    font-size: 0.78rem;
+}
+
+.recent-order.failed {
+    opacity: 0.7;
+}

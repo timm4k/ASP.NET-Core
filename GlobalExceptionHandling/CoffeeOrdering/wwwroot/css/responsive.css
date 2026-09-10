@@ -1,0 +1,132 @@
+@media (max-width: 1100px) {
+    .drink-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .recent-section {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 820px) {
+    .site-header,
+    main {
+        width: min(100% - 32px, 1400px);
+    }
+
+    .menu-intro {
+        grid-template-columns: 1fr;
+        align-content: end;
+        gap: 2rem;
+    }
+
+    .menu-heading,
+    .workspace-heading {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .menu-search {
+        width: 100%;
+    }
+
+    .drink-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .auth-card {
+        grid-template-columns: 1fr;
+        margin-top: -40px;
+    }
+
+    .auth-copy {
+        min-height: auto;
+    }
+
+    .notebook-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .note-form {
+        position: static;
+    }
+}
+
+@media (max-width: 560px) {
+    .site-header {
+        min-height: 78px;
+    }
+
+    .brand small {
+        display: none;
+    }
+
+    .brand-mark {
+        width: 42px;
+        height: 42px;
+    }
+
+    .header-navigation a {
+        padding-inline: 0.8rem;
+    }
+
+    .menu-intro,
+    .notes-intro {
+        min-height: 360px;
+        border-radius: 24px;
+    }
+
+    .drink-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .drink-copy {
+        min-height: auto;
+    }
+
+    .recent-orders {
+        grid-template-columns: 1fr;
+    }
+
+    .order-dock {
+        bottom: 12px;
+    }
+
+    .order-selection img {
+        width: 46px;
+        height: 46px;
+    }
+
+    .order-dock .primary-button {
+        min-height: 44px;
+        padding-inline: 1rem;
+    }
+
+    .toast {
+        top: 88px;
+        right: 16px;
+        width: calc(100% - 32px);
+    }
+
+    .auth-card {
+        border-radius: 22px;
+    }
+
+    .note-form-actions {
+        flex-direction: column;
+    }
+
+    .note-form-actions button {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}

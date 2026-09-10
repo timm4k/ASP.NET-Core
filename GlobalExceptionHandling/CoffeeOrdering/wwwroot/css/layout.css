@@ -1,0 +1,72 @@
+.site-header,
+main {
+    width: min(1400px, calc(100% - 64px));
+    margin-inline: auto;
+}
+
+main {
+    padding-bottom: 8rem;
+}
+
+.menu-intro,
+.notes-intro {
+    position: relative;
+    overflow: hidden;
+    border-radius: 34px;
+    background: var(--coffee-dark);
+    color: #f9efe4;
+}
+
+.menu-intro::after,
+.notes-intro::after {
+    position: absolute;
+    right: -9rem;
+    bottom: -13rem;
+    width: 34rem;
+    height: 34rem;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4rem rgba(255, 255, 255, 0.035), 0 0 0 9rem rgba(255, 255, 255, 0.025);
+    content: "";
+}
+
+.menu-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+    align-items: end;
+    min-height: 420px;
+    padding: clamp(2rem, 6vw, 5rem);
+}
+
+.menu-intro h1,
+.notes-intro h1 {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    color: #fff8ef;
+}
+
+.menu-intro > p,
+.notes-intro > p:last-child {
+    position: relative;
+    z-index: 1;
+    max-width: 480px;
+    margin: 0;
+    color: #d8c8bc;
+    font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+}
+
+.menu-section,
+.recent-section,
+.notes-workspace {
+    margin-top: clamp(4rem, 8vw, 7rem);
+}
+
+.menu-heading,
+.workspace-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Private coffee tasting notes">
+    <title>Oak &amp; Steam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=DM+Serif+Display:ital@0;1&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/navigation.css">
+    <link rel="stylesheet" href="/css/notes.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script type="module" src="/js/notes-app.js"></script>
+</head>
+<body class="notes-page">
+    <header class="site-header">
+        <a class="brand" href="/" aria-label="Oak and Steam home">
+            <span class="brand-mark">O&amp;S</span>
+            <span><strong>Oak &amp; Steam</strong><small>Neighborhood coffee</small></span>
+        </a>
+        <nav class="header-navigation" aria-label="Primary navigation">
+            <a href="/">Menu</a>
+            <a class="active" href="/notes.html" aria-current="page">My notes</a>
+        </nav>
+    </header>
+    <main>
+        <section class="notes-intro">
+            <p class="eyebrow">Your private coffee journal</p>
+            <h1>Remember every cup worth repeating</h1>
+            <p>Save tasting notes, favorite beans and brewing ideas in one private place</p>
+        </section>
+        <section class="auth-card" id="auth-card">
+            <div class="auth-copy">
+                <p class="eyebrow">Start your journal</p>
+                <h2>Create an account to keep your notes</h2>
+                <p>Your entries are private and only available when you sign in</p>
+            </div>
+            <div class="auth-panel">
+                <div class="auth-tabs" role="tablist" aria-label="Account options">
+                    <button class="active" type="button" data-auth-mode="login" role="tab" aria-selected="true">Sign in</button>
+                    <button type="button" data-auth-mode="register" role="tab" aria-selected="false">Create account</button>
+                </div>
+                <form class="auth-form" id="auth-form">
+                    <label>Username<input name="username" maxlength="32" autocomplete="username" required></label>
+                    <label>Password<input name="password" type="password" minlength="8" maxlength="100" autocomplete="current-password" required></label>
+                    <button class="primary-button" id="auth-submit" type="submit">Sign in</button>
+                </form>
+                <p class="form-message" id="auth-status" aria-live="polite"></p>
+            </div>
+        </section>
+        <section class="notes-workspace" id="notes-workspace" hidden>
+            <header class="workspace-heading">
+                <div><p class="eyebrow">Welcome back</p><h2 id="session-user"></h2></div>
+                <button class="secondary-button" id="logout-button" type="button">Sign out</button>
+            </header>
+            <div class="notebook-grid">
+                <form class="note-form" id="note-form">
+                    <p class="eyebrow">New entry</p>
+                    <h3>What did you taste?</h3>
+                    <label>Title<input name="title" maxlength="80" placeholder="Ethiopia natural, V60" required></label>
+                    <label>Your note<textarea name="content" maxlength="1000" placeholder="Stone fruit, cacao and a bright finish" required></textarea></label>
+                    <div class="note-form-actions">
+                        <button class="primary-button" type="submit" id="note-submit">Save note</button>
+                        <button class="secondary-button" type="button" id="note-cancel" hidden>Cancel</button>
+                    </div>
+                    <p class="form-message" id="note-status" aria-live="polite"></p>
+                </form>
+                <div class="notes-collection">
+                    <h3>Your journal</h3>
+                    <div class="note-list" id="note-list"><p class="empty-state">No notes yet. Save your first cup</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
