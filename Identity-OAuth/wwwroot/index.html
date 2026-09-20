@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0e0a14">
+    <title>Identity &amp; OAuth Lab</title>
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+</head>
+<body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="hero shell">
+        <div>
+            <p class="eyebrow">ACCOUNT ACCESS DEMO</p>
+            <h1>Identity <span>&amp; OAuth</span> Lab</h1>
+            <p class="hero-copy">Create an account, sign in and see how claims change the pages you can open</p>
+        </div>
+    </header>
+
+    <nav class="shell nav-row">
+        <div class="links">
+            <a class="endpoint" href="/register">REGISTER</a>
+            <a class="endpoint" href="/login">SIGN IN</a>
+            <a class="endpoint" href="/dashboard">DASHBOARD</a>
+        </div>
+    </nav>
+
+    <main class="shell">
+        <section class="grid-three" aria-label="How authentication works">
+            <article class="panel">
+                <div class="panel-heading">
+                    <div><p class="section-index">STEP 1</p><h2>Create an account</h2></div>
+                </div>
+                <p class="panel-note">Identity validates and hashes the password before the account is stored</p>
+                <div class="badge-row"><a class="endpoint" href="/register">REGISTER</a></div>
+            </article>
+
+            <article class="panel">
+                <div class="panel-heading">
+                    <div><p class="section-index">STEP 2</p><h2>Sign in</h2></div>
+                </div>
+                <p class="panel-note">Use a local account or Google when OAuth credentials are configured</p>
+                <div class="badge-row"><a class="endpoint" href="/login">SIGN IN</a></div>
+            </article>
+
+            <article class="panel">
+                <div class="panel-heading">
+                    <div><p class="section-index">STEP 3</p><h2>Check access</h2></div>
+                </div>
+                <p class="panel-note">Company email claims grant the Admin role while other accounts remain viewers</p>
+                <div class="badge-row"><a class="endpoint" href="/dashboard">DASHBOARD</a></div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

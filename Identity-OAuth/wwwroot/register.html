@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0e0a14">
+    <title>Register · Identity &amp; OAuth Lab</title>
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <script type="module" src="/js/register-page.js"></script>
+</head>
+<body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="hero hero-centered shell">
+        <div>
+            <p class="eyebrow">NEW ACCOUNT</p>
+            <h1>Create an <span>account</span></h1>
+            <p class="hero-copy">Your password is validated and hashed by ASP.NET Core Identity</p>
+        </div>
+    </header>
+
+    <main class="shell">
+        <section class="panel form-card">
+            <div id="errorBanner" class="banner" hidden></div>
+            <form id="registerForm">
+                <label>Email
+                    <input name="email" type="email" maxlength="254" autocomplete="username" placeholder="you@example.com" required>
+                </label>
+                <label>Password
+                    <input name="password" type="password" minlength="6" maxlength="100" autocomplete="new-password" placeholder="Create a secure password" required>
+                    <span class="hint">Use upper and lowercase letters, a number and a symbol</span>
+                </label>
+                <div class="form-actions"><button type="submit">Create account</button></div>
+            </form>
+            <p class="form-note">Already registered? <a class="endpoint" href="/login">Sign in</a> · Back to <a class="endpoint" href="/">home</a></p>
+        </section>
+    </main>
+</body>
+</html>

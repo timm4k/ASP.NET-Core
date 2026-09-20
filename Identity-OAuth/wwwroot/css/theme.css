@@ -1,0 +1,125 @@
+:root {
+    color-scheme: dark;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #f4effa;
+    background: #0e0a14;
+    --bg: #0e0a14;
+    --surface: #1a1422;
+    --panel: #1e1629;
+    --line: rgba(185, 144, 255, 0.18);
+    --accent: #b990ff;
+    --accent-strong: #9d6ee0;
+    --accent-bright: #e0c7ff;
+    --accent-hot: #d69cff;
+    --muted: #9587a4;
+    --text-soft: #c9bcd6;
+    --danger: #ff9ebf;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    background:
+        linear-gradient(rgba(185, 144, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(185, 144, 255, 0.04) 1px, transparent 1px),
+        radial-gradient(circle at 12% 0%, #2b1845 0, transparent 34rem),
+        var(--bg);
+    background-size: 44px 44px, 44px 44px, auto, auto;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--accent-bright);
+    outline-offset: 3px;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    max-width: 820px;
+    margin-bottom: 0.85rem;
+    font-size: clamp(2.5rem, 6.5vw, 5.1rem);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+}
+
+    h1 span {
+        color: transparent;
+        background: linear-gradient(92deg, var(--accent), var(--accent-hot));
+        background-clip: text;
+    }
+
+h2 {
+    margin-bottom: 0;
+    font-size: clamp(1.15rem, 2vw, 1.6rem);
+    letter-spacing: -0.025em;
+}
+
+h3 {
+    margin-bottom: 0.3rem;
+    font-size: 1.02rem;
+}
+
+.eyebrow,
+.section-index {
+    margin: 0 0 0.65rem;
+    color: var(--accent);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+}
+
+.hero-copy {
+    color: var(--muted);
+    line-height: 1.65;
+}
+
+.hero-copy {
+    max-width: 680px;
+    margin-bottom: 0;
+}
+
+.ambient {
+    position: fixed;
+    z-index: -1;
+    width: 30rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.13;
+    pointer-events: none;
+}
+
+.ambient-one {
+    top: -8rem;
+    right: -7rem;
+    background: #7c3aed;
+}
+
+.ambient-two {
+    bottom: -14rem;
+    left: -11rem;
+    background: #5b21b6;
+}

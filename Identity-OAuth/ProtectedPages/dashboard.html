@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0e0a14">
+    <title>Dashboard · Identity &amp; OAuth Lab</title>
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <script type="module" src="/js/dashboard-page.js"></script>
+</head>
+<body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="hero shell">
+        <div>
+            <p class="eyebrow">SIGNED IN</p>
+            <h1>Dashboard</h1>
+            <p class="hero-copy">Your profile and current access level</p>
+        </div>
+    </header>
+
+    <nav class="shell nav-row">
+        <div class="links">
+            <a class="endpoint" href="/">HOME</a>
+            <a class="endpoint" href="/admin-panel">ADMIN PANEL</a>
+        </div>
+        <button id="logoutButton" type="button" class="danger">Sign out</button>
+    </nav>
+
+    <main class="shell">
+        <section class="grid-two">
+            <article class="panel">
+                <div class="panel-heading">
+                    <div><p class="section-index">PROFILE</p><h2>Who you are</h2></div>
+                </div>
+                <div class="profile-head">
+                    <img id="avatar" class="avatar" alt="Profile avatar" hidden>
+                    <div id="avatarPlaceholder" class="avatar avatar-placeholder" aria-hidden="true">?</div>
+                    <div class="profile-meta">
+                        <h3 id="profileName">Loading</h3>
+                        <p id="profileEmail">Loading</p>
+                        <div id="roleBadges" class="badge-row"></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="panel">
+                <div class="panel-heading">
+                    <div><p class="section-index">ACCESS LEVEL</p><h2>What you can open</h2></div>
+                </div>
+                <p class="panel-note" id="accessNote">Checking your access</p>
+                <div class="badge-row">
+                    <a id="adminLink" class="endpoint" href="/admin-panel" hidden>OPEN ADMIN PANEL</a>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

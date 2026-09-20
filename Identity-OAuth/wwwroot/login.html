@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0e0a14">
+    <title>Sign in · Identity &amp; OAuth Lab</title>
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/auth.css">
+    <script type="module" src="/js/login-page.js"></script>
+</head>
+<body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="hero hero-centered shell">
+        <div>
+            <h1>Sign <span>in</span></h1>
+            <p class="hero-copy">Use your account or continue with Google</p>
+        </div>
+    </header>
+
+    <main class="shell auth-layout">
+        <section class="panel auth-card">
+            <div class="auth-card-heading">
+                <p class="section-index">LOCAL ACCOUNT</p>
+                <h2>Sign in with email</h2>
+                <p>Use an account created with ASP.NET Core Identity</p>
+            </div>
+            <div id="errorBanner" class="banner" hidden></div>
+            <form id="loginForm">
+                <label>Email
+                    <input name="email" type="email" maxlength="254" autocomplete="username" placeholder="you@example.com" required>
+                </label>
+                <label>Password
+                    <input name="password" type="password" maxlength="100" autocomplete="current-password" placeholder="Your password" required>
+                </label>
+                <div class="form-actions"><button class="auth-submit" type="submit">Sign in</button></div>
+            </form>
+            <p class="form-note">No account yet? <a class="endpoint" href="/register">Register</a> · Back to <a class="endpoint" href="/">home</a></p>
+
+            <section id="demoAccountsSection" class="demo-section" hidden>
+                <div class="divider">demo accounts</div>
+                <div class="demo-heading">
+                    <h2>Try both access levels</h2>
+                    <p>Choose a temporary development account to sign in without exposing a password</p>
+                </div>
+                <div id="demoAccounts" class="demo-grid"></div>
+            </section>
+        </section>
+
+        <aside class="panel auth-card google-card">
+            <div class="auth-card-heading">
+                <p class="section-index">GOOGLE OAUTH</p>
+                <h2>Sign in with Google</h2>
+                <p>Use a Google account without sharing its password with this application</p>
+            </div>
+
+            <div id="googleErrorBanner" class="banner" hidden></div>
+            <button id="googleLogin" class="google-button" type="button" disabled>Sign in with Google</button>
+
+            <section id="googleUnavailable" class="google-setup" hidden>
+                <h3>Google sign-in needs setup</h3>
+                <ol class="setup-steps">
+                    <li>
+                        <span>Open a terminal in the project folder and save both Google Cloud credentials in .NET User Secrets</span>
+                        <code>dotnet user-secrets set "Google:ClientId" "YOUR_CLIENT_ID"</code>
+                        <code>dotnet user-secrets set "Google:ClientSecret" "YOUR_CLIENT_SECRET"</code>
+                    </li>
+                    <li>
+                        <span>Register this authorized redirect URI in Google Cloud</span>
+                        <code id="googleCallbackUrl">Loading callback URL</code>
+                    </li>
+                    <li><span>Restart the application and open this page again</span></li>
+                </ol>
+            </section>
+        </aside>
+    </main>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0e0a14">
+    <title>Admin panel · Identity &amp; OAuth Lab</title>
+    <link rel="stylesheet" href="/css/theme.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    <script type="module" src="/js/admin-page.js"></script>
+</head>
+<body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="hero shell">
+        <div>
+            <p class="eyebrow">ADMINISTRATOR ACCESS</p>
+            <h1>Admin <span>panel</span></h1>
+            <p class="hero-copy">This page is protected by the Admin authorization policy</p>
+        </div>
+    </header>
+
+    <nav class="shell nav-row">
+        <div class="links">
+            <a class="endpoint" href="/">HOME</a>
+            <a class="endpoint" href="/dashboard">DASHBOARD</a>
+        </div>
+        <button id="logoutButton" type="button" class="danger">Sign out</button>
+    </nav>
+
+    <main class="shell">
+        <section class="admin-grid">
+            <article class="panel access-panel">
+                <p class="section-index">ACCESS STATUS</p>
+                <div class="access-status">
+                    <span class="access-dot"></span>
+                    <div>
+                        <h2>Access granted</h2>
+                        <p>Your identity passed the Admin policy</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="panel">
+                <p class="section-index">SIGNED-IN ADMIN</p>
+                <dl class="admin-details">
+                    <div>
+                        <dt>Email</dt>
+                        <dd id="adminEmail">Loading</dd>
+                    </div>
+                    <div>
+                        <dt>Roles</dt>
+                        <dd id="adminRoles">Loading</dd>
+                    </div>
+                    <div>
+                        <dt>Cookie lifetime</dt>
+                        <dd id="cookieLifetime">Loading</dd>
+                    </div>
+                </dl>
+            </article>
+
+            <article class="panel policy-panel">
+                <p class="section-index">WHY YOU HAVE ACCESS</p>
+                <h2>Claim transformation</h2>
+                <p id="policyExplanation" class="panel-note">Checking the active company policy</p>
+                <div class="policy-flow" aria-label="Authorization flow">
+                    <span>Authenticated user</span>
+                    <span aria-hidden="true">→</span>
+                    <span>Company email</span>
+                    <span aria-hidden="true">→</span>
+                    <span>Admin role</span>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
