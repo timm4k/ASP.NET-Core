@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Response Caching</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/cache-lab.css">
+</head>
+<body>
+    <div class="shell">
+        <main>
+            <section class="hero">
+                <h1>Test response caching</h1>
+                <p>Follow the steps below and keep the server console open to see when SQLite is queried</p>
+            </section>
+
+            <section class="panel instructions">
+                <h2>How to test</h2>
+                <ol>
+                    <li><strong>Reset demonstration</strong><span>Clears the server cache</span></li>
+                    <li><strong>Request post</strong><span>Loads the post from SQLite and caches it</span></li>
+                    <li><strong>Repeat request</strong><span>Returns HTTP 304 from memory without a database query</span></li>
+                    <li><strong>Edit and save</strong><span>Repeat the request to receive HTTP 200 with the updated post</span></li>
+                </ol>
+            </section>
+
+            <section class="workspace">
+                <article class="panel post-panel">
+                    <div class="panel-head">
+                        <div>
+                            <span class="section-label">Post response</span>
+                            <h2 id="postTitle">Post is ready to load</h2>
+                        </div>
+                        <span class="status waiting" id="httpStatus">Waiting</span>
+                    </div>
+                    <p class="post-content" id="postContent">Start the demonstration to request the seeded post from SQLite</p>
+                    <dl class="metadata">
+                        <div><dt>Response source</dt><dd id="dataSource">—</dd></div>
+                        <div><dt>Last-Modified</dt><dd id="lastModified">—</dd></div>
+                        <div><dt>UpdatedAt</dt><dd id="updatedAt">—</dd></div>
+                    </dl>
+                    <div class="actions">
+                        <button class="button secondary" id="resetButton">Reset demonstration</button>
+                        <button class="button" id="requestButton">Request post</button>
+                        <button class="button accent" id="repeatButton" disabled>Repeat request</button>
+                    </div>
+                    <p class="message" id="requestMessage"></p>
+                </article>
+
+                <section class="panel edit-panel">
+                    <span class="section-label">Post editor</span>
+                    <h2>Update the post</h2>
+                    <p class="muted">The update writes to SQLite, refreshes the server cache and changes Last-Modified</p>
+                    <form id="updateForm">
+                        <label>
+                            Title
+                            <input id="titleInput" maxlength="120" required>
+                        </label>
+                        <label>
+                            Content
+                            <textarea id="contentInput" maxlength="2000" required></textarea>
+                        </label>
+                        <button class="button" type="submit" id="updateButton" disabled>Save update</button>
+                    </form>
+                    <p class="message" id="updateMessage"></p>
+                </section>
+
+                <section class="panel trace-panel">
+                    <div class="panel-head">
+                        <div>
+                            <span class="section-label">Browser results</span>
+                            <h2>Request history</h2>
+                        </div>
+                        <button class="text-button" id="clearTrace">Clear</button>
+                    </div>
+                    <p class="muted">Compare these HTTP results with the cache and database messages in the server console</p>
+                    <div class="trace-list" id="traceList">
+                        <p class="empty">No requests yet</p>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+    <script src="/js/cache-lab.js"></script>
+</body>
+</html>
