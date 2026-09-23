@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Observatory · Astral Observatory</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/observatory.css">
+</head>
+<body>
+    <div class="shell">
+        <header class="topbar"><a class="brand" href="/observatory.html"><span class="brand-mark"></span> Live observatory</a><div class="top-actions"><button class="icon-button" id="notificationToggle" aria-label="Notifications">✦<span class="badge hidden" id="notificationBadge">0</span></button><a class="button secondary" href="/profile.html">Profile</a></div></header>
+        <main class="app-grid">
+            <aside class="panel sidebar"><span class="eyebrow">Objects being monitored</span><p class="muted sidebar-help">Choose an object to see its current activity and history</p><div class="object-list" id="objectList"></div><div class="utility"><button class="button secondary" id="pushButton">Enable browser alerts</button><button class="button secondary" id="syncButton">Update observations</button></div></aside>
+            <section class="panel scene"><div class="scene-guide">Select an object on the map or in the list</div><div class="space-stage" id="spaceStage"></div></section>
+            <aside class="panel details"><span class="eyebrow" id="objectType">Select an object</span><h1 id="objectName">Deep sky</h1><p class="muted" id="objectDescription">Choose a celestial object to inspect its latest observation</p><div class="metric-value" id="metricValue">—</div><span class="muted" id="metricName">Activity index from 0 to 100</span><div class="meter"><span id="meterValue" style="width:0"></span></div><small class="muted" id="updatedAt"></small><svg class="sparkline" viewBox="0 0 300 100" preserveAspectRatio="none"><polyline id="sparkline" points="0,95 300,95"></polyline></svg><p class="muted alert-help">Set a threshold and the system will notify you when this activity reaches it</p><form class="alert-form" id="alertForm"><div class="field"><input id="targetValue" type="number" min="0" max="100" step="1" placeholder="Target 0–100" required></div><button class="button" type="submit">Set alert</button></form><p class="message" id="detailMessage"></p><div class="alert-list" id="alertList"></div></aside>
+        </main>
+    </div>
+    <aside class="drawer" id="notificationDrawer"><div class="drawer-head"><div><span class="eyebrow">Your alerts</span><h2>Notifications</h2></div><button class="icon-button" id="drawerClose" aria-label="Close notifications">×</button></div><p class="muted">Messages appear here when an observation reaches one of your thresholds</p><div class="notification-list" id="notificationList"><p class="muted">No unread notifications</p></div><p class="message" id="notificationMessage"></p><div class="utility"><button class="button secondary" id="testNotification">Send test alert</button><button class="button secondary" id="markRead">Mark all as read</button></div></aside>
+    <script src="/js/api.js"></script>
+    <script src="/js/observatory.js"></script>
+</body>
+</html>

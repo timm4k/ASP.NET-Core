@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Astral Observatory</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/auth.css">
+</head>
+<body>
+    <div class="shell">
+        <main class="auth-layout">
+            <section class="auth-intro">
+                <h1>Watch the quiet universe move</h1>
+                <p>Track six celestial objects, set your own activity thresholds and receive secure real-time alerts from one private observatory</p>
+                <div class="orbit"><div class="orbit-ring"></div><div class="orbit-core"></div></div>
+            </section>
+            <section class="panel auth-card">
+                <div id="credentialsStep">
+                    <div class="auth-tabs"><button class="auth-tab active" data-mode="login">Sign in</button><button class="auth-tab" data-mode="register">Create account</button></div>
+                    <h2 id="authTitle">Return to your station</h2>
+                    <p class="muted" id="authSubtitle">Your second factor will be requested next</p>
+                    <form id="authForm" class="auth-form">
+                        <div class="field register-only hidden"><label for="name">Name</label><input id="name" autocomplete="name"></div>
+                        <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="email" required></div>
+                        <div class="field register-only hidden"><label for="phone">Phone number</label><input id="phone" type="tel" autocomplete="tel" placeholder="+380501234567"><small class="field-help">Enter your number in international format This installation shows a demo code unless the server owner enables real SMS delivery</small></div>
+                        <div class="field"><label for="password">Password</label><input id="password" type="password" autocomplete="current-password" required><small class="field-help register-only hidden">Use at least 8 characters with uppercase, lowercase, a number and a symbol</small></div>
+                        <button class="button" type="submit" id="authSubmit">Continue</button>
+                        <p class="message" id="authMessage"></p>
+                    </form>
+                </div>
+                <div id="methodStep" class="hidden">
+                    <span class="eyebrow">Identity check</span><h2>Choose a second factor</h2><p class="muted">Complete one verification to unlock the observatory</p>
+                    <div class="method-grid"><button class="method" id="smsMethod"><strong>SMS code</strong><span>Use the phone number stored with your account</span></button><button class="method" id="totpMethod"><strong>Authenticator</strong><span>Scan a QR code with Google Authenticator, Microsoft Authenticator or Aegis</span></button></div>
+                </div>
+                <div id="verifyStep" class="hidden">
+                    <h2 id="verifyTitle">Enter verification code</h2>
+                    <p class="muted" id="verifyInstructions">Enter the six-digit code below to finish signing in</p>
+                    <div id="totpSetup" class="hidden"><img id="qrCode" class="qr" alt="Authenticator QR code"><p id="sharedKey" class="code-hint"></p></div>
+                    <p id="developmentCode" class="code-hint hidden"></p>
+                    <form id="verifyForm" class="auth-form"><div class="field"><label for="verificationCode">Six-digit code</label><input id="verificationCode" inputmode="numeric" autocomplete="one-time-code" maxlength="8" required></div><button class="button" type="submit">Open observatory</button><button class="button secondary" type="button" id="backToMethods">Choose another method</button><p class="message" id="verifyMessage"></p></form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="/js/api.js"></script>
+    <script src="/js/auth.js"></script>
+</body>
+</html>

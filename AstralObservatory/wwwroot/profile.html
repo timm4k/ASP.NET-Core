@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile · Astral Observatory</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <div class="shell"><header class="topbar"><a class="brand" href="/observatory.html"><span class="brand-mark"></span> Account</a><a class="button secondary" href="/observatory.html">Back to observatory</a></header><main class="profile-layout"><section class="panel profile-card"><div class="avatar" id="initials">AO</div><span class="eyebrow">Observer profile</span><h1 id="profileName">Loading</h1><p class="muted" id="profileEmail"></p><button class="button secondary" id="logoutButton">Sign out</button></section><section class="panel profile-card"><span class="eyebrow">Security and delivery</span><h2>Station settings</h2><div class="settings-row"><div><strong>Two-factor authentication</strong><p class="muted">A one-time code is required after your password</p><p class="muted" id="twoFactorMethod">Loading</p></div></div><div class="settings-row"><div><strong>SMS verification</strong><p class="muted" id="profilePhone"></p><p class="muted" id="smsDeliveryDescription"></p></div></div><div class="settings-row"><div><strong>Email alerts</strong><p class="muted" id="emailDeliveryDescription">Loading</p></div></div><div class="settings-row"><div><strong>Reset second factor</strong><p class="muted">Clears the current 2FA method and authenticator key</p></div><button class="button danger" id="disableTwoFactor">Reset 2FA</button></div><p class="message" id="profileMessage"></p></section></main></div>
+    <script src="/js/api.js"></script>
+    <script src="/js/profile.js"></script>
+</body>
+</html>
