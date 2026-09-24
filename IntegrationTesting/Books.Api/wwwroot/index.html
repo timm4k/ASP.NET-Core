@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book API Lab</title>
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <p class="eyebrow">Integration testing</p>
+      <h1>Book API Lab</h1>
+      <p>Use the interface to exercise the same CRUD endpoints covered by the integration tests</p>
+    </header>
+    <section class="workspace">
+      <form id="book-form" class="panel">
+        <input id="book-id" type="hidden">
+        <p class="eyebrow">Book editor</p>
+        <h2 id="form-title">Add a book</h2>
+        <label>Title<input id="title" maxlength="200" required></label>
+        <label>Author<input id="author" maxlength="120" required></label>
+        <p id="form-message" class="message" aria-live="polite"></p>
+        <div class="actions">
+          <button type="submit">Save book</button>
+          <button id="cancel-edit" class="secondary" type="button" hidden>Cancel edit</button>
+        </div>
+      </form>
+      <section class="panel library">
+        <div class="section-heading">
+          <div><p class="eyebrow">Live API data</p><h2>Library</h2></div>
+          <button id="refresh" class="secondary" type="button">Refresh</button>
+        </div>
+        <div id="book-list" class="book-list"></div>
+      </section>
+    </section>
+  </main>
+  <script src="/js/books.js" defer></script>
+</body>
+</html>

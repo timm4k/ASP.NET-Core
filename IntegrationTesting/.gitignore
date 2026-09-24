@@ -1,0 +1,11 @@
+.vs/
+**/bin/
+**/obj/
+TestResults/
+*.user
+*.suo
+*.log
+*.db
+*.db-shm
+*.db-wal
+Directory.Build.props
